@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation Suggester</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Vacation Suggester</h1>
+      <form id="survey">
+        <div class="form-group">
+          <label class="control-label" for="name">Name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="season">Favorite Season:</label>
+          <select id="season" class="form-control">
+            <option value="1">Winter</option>
+            <option value="2">Spring</option>
+            <option value="3">Fall</option>
+            <option value="4">Summer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="activity">Activity of Choice:</label>
+          <select id="activity" class="form-control">
+            <option value="1">Skiing, snowboarding, etc.</option>
+            <option value="2">Urban hiking through big cities</option>
+            <option value="3">Exploring the wonders of nature</option>
+            <option value="4">Relaxing by the beach</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="accommodation">Preferred Type of Accommodation:</label>
+          <select id="accommodation" class="form-control">
+            <option value="1">Cabin</option>
+            <option value="2">Hotel</option>
+            <option value="3">Tent</option>
+            <option value="4">Resort</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transportation">Transportation Priority:</label>
+          <select id="transportation" class="form-control">
+            <option value="1">Driving a snowmobile</option>
+            <option value="2">Riding the subway</option>
+            <option value="3">Hiking</option>
+            <option value="4">None needed</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="nightlife">Nightlife Options:</label>
+          <select id="nightlife" class="form-control">
+            <option value="1">Drinking hot chocolate by the fire</option>
+            <option value="2">Go to dinner and a show</option>
+            <option value="3">Gazing at the stars</option>
+            <option value="4">Drinking and dancing the night away</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success">Go!</button>
+        <br>
+      </form>
+      <div id="nature">
+        <h3><span class="name"></span>, you might enjoy visiting national parks!</h3>
+        <p>Suggestions include: The Grand Canyon in the US, Kruger National Park in South Africa,
+          or Machu Picchu in Peru.</p>
+        <img src="img/grandcanyonarizona">
+        <img src="img/krugersouthafrica">
+        <img src="img/machupicchuperu">
+      </div>
+      <div id="city">
+        <h3><span class="name"></span>, you might enjoy touring the big cities!</h3>
+        <p>Suggestions include: New York City in the US, Tokyo in Japan, or Singapore.</p>
+        <img src="img/newyork">
+        <img src="img/tokyo">
+        <img src="img/singapore">
+      </div>
+      <div id="snow">
+        <h3><span class="name"></span>, you might enjoy a snow-filled vacation!</h3>
+        <p>Suggestions include: Mammoth in the US, Whistler in Canada, or Cervinia in Italy.</p>
+        <img src="img/mammothcalifornia">
+        <img src="img/whistlercanada">
+        <img src="img/cerviniaitaly">
+      </div>
+      <div id="beach">
+        <h3><span class="name"></span>, you might enjoy relaxing at beach resorts!</h3>
+        <p>Suggestions include: Phuket in Thailand, Hawaii in US, or Cancun in Mexico.</p>
+        <img src="img/phuketthailand">
+        <img src="img/hawaii">
+        <img src="img/cancunmexico">
+      </div>
+    </div>
+  </body>
+</html>
