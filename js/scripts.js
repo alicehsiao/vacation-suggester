@@ -15,10 +15,10 @@ var vacationMatch = function (number) {
 $(document).ready(function() {
   $("form#survey").submit(function() {
     event.preventDefault();
-    var name = parseInt($("#name").val());
+    var name = $("#name").val();
     var number1 = parseInt($("#season").val());
     var number2 = parseInt($("#activity").val());
-    var number3 = parseInt($("#accomodation").val());
+    var number3 = parseInt($("#accommodation").val());
     var number4 = parseInt($("#transportation").val());
     var number5 = parseInt($("#nightlife").val());
     var sum = number1 + number2 + number3 + number4 + number5;
@@ -27,19 +27,19 @@ $(document).ready(function() {
     if (result === "nature") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#nature").fadeIn();
+      $("#nature").fadeIn().show();
     } else if (result === "city") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#city").fadeIn();
+      $("#city").fadeIn().show();
     } else if (result === "snow") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#snow").fadeIn();
+      $("#snow").fadeIn().show();
     } else if (result === "beach") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#beach").fadeIn();
+      $("#beach").fadeIn().show();
     }
   });
 });
