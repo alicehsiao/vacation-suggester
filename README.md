@@ -7,6 +7,7 @@
 ## Description
 
 This website will survey the user and provide vacation suggestions based on the responses.
+Link to Project: alicehsiao.github.io/vacation-suggester
 
 ## Setup/Installation Requirements
 
