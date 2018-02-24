@@ -27,19 +27,19 @@ $(document).ready(function() {
     if (result === "nature") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#nature").fadeIn().show();
+      $("#nature").fadeIn(3000).show();
     } else if (result === "city") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#city").fadeIn().show();
+      $("#city").slideUp(3000).show();
     } else if (result === "snow") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#snow").fadeIn().show();
+      $("#snow").fadeIn(3000).show();
     } else if (result === "beach") {
       $(".output").text(result);
       $(".name").text(name);
-      $("#beach").fadeIn().show();
+      $("#beach").slideDown(3000).show();
     }
   });
 });
